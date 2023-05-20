@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/Logo.png" alt="">
+    </header>
+    
+    <div class="input_text">
+        <input type="text" name="caja-texto" id="miInput" required placeholder="Ingrese el texto aqui">
+        <div id="advertencia_div">
+            <img src="./images/Group.png" alt="">
+            <p class="advertencia">Solo letras minusculas y sin acentos</p>
+        </div>
+    </div>
+    <div id="botones">
+        <button class="btn-encriptar" onclick="llamarFunciones()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="llamarFunciones2()">Desencriptar</button>
+    </div>
+    <div id="rectangulo">
+        <p id="miElemento" class="textoEncriptado"></p>
+        <img id="monoIMG" class="mono" src="./images/mono.png" style="display: block;" alt="">
+        <button onclick="copiarAlPortapapeles()" id="btn-copiar" style="display: none;">Copiar</button>
+        <div class="textos-cuadro">
+            <p id="sinMensaje" class="p1" style="display: block;">Ningun mensaje fue encontrado</p>
+            <p id="escribeTexto" class="p2" style="display: block;">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div> 
+    </div>
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
